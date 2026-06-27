@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Place_react</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Leaflet Map CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Mapillary JS Viewer CSS & JS -->
+    <link href="https://cdn.jsdelivr.net/npm/mapillary-js@4.1.0/dist/mapillary.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/mapillary-js@4.1.0/dist/mapillary.js"></script>
+
+    <style>
+      html, body, #root {
+        height: 100% !important;
+        min-height: 100% !important;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      /* Ensure Leaflet markers render correctly without webpack bundling issues */
+      .leaflet-default-icon-path {
+        background-image: url(https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/images/marker-icon.png);
+      }
+      /* Sizing safety guarantees to prevent black/collapsed rendering containers */
+      #mapillary-viewer-container {
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        background-color: #020202;
+      }
+      #guess-leaflet-map-element {
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+      }
+      #result-leaflet-map {
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-D9HIgXib.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CNaZ8Bo_.css">
+    <link rel="icon" type="image/png" href="icons/favicon.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+</head>
+  <body class="bg-slate-900 text-slate-100 min-h-screen font-sans">
+    <div id="root"></div>
+  </body>
+</html>
+
+
